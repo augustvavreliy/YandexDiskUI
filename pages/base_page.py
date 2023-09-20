@@ -21,11 +21,6 @@ class BasePage():
     
     def close_tab(self):
         self.driver.browser.close()
-    
-    def click_outside(self):
-        self.driver.switch_to.default_content()
-        actionChains = ActionChains(self.driver)
-        return actionChains.move_by_offset(0, 0).click().perform()
 
     def _find_element(self, locator, timeout=TIMEOUT):
         return WebDriverWait(self.driver, timeout).until(EC.presence_of_element_located(locator),

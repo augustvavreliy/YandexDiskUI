@@ -1,6 +1,5 @@
 from pages.base_page import BasePage
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.action_chains import ActionChains 
 
 class DiskLocators:
     create_button = (By.CSS_SELECTOR, "button[class='Button2 Button2_view_raised Button2_size_m Button2_width_max']")

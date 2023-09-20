@@ -1,4 +1,3 @@
-import pytest
 from pages.login_page import LoginPage
 from pages.disk_page import DiskPage
 import time
